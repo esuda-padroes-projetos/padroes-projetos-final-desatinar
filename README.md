@@ -1,4 +1,4 @@
-# Projeto DUPE (FullStack)
+# Projeto DUPE (FullStack) - Rodrigo Santos e Guilherme Santos
 
 Sistema completo para gerenciar Empresas e Duplicatas usando Flask e SQLAlchemy no backend, e React no frontend.
 O projeto demonstra o uso dos padrões de projeto State e Observer para controlar o ciclo de
