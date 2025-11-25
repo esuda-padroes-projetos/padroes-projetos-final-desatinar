@@ -1,0 +1,150 @@
+.empresas {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.page-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 2rem;
+  color: var(--color-graphite);
+  margin: 0;
+  font-weight: 700;
+}
+
+.page-subtitle {
+  color: #666;
+  margin: 0.5rem 0 0 0;
+  font-size: 1rem;
+}
+
+.loading {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+  font-size: 1.125rem;
+}
+
+.error-message {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #dc2626;
+  padding: 1rem;
+}
+
+.error-message p {
+  margin: 0;
+}
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem 2rem;
+  text-align: center;
+  color: #666;
+}
+
+.empty-state svg {
+  color: var(--color-stormy-teal);
+}
+
+.empty-state h3 {
+  margin: 0;
+  color: var(--color-graphite);
+  font-size: 1.25rem;
+}
+
+.empty-state p {
+  margin: 0;
+}
+
+.empty-state a {
+  text-decoration: none;
+}
+
+.empresas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.empresa-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.empresa-icon {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-stormy-teal);
+  color: var(--color-white);
+  border-radius: var(--radius-md);
+}
+
+.empresa-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.empresa-nome {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.125rem;
+  color: var(--color-graphite);
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.empresa-cnpj {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #666;
+  font-family: 'Courier New', monospace;
+}
+
+.empresa-id {
+  flex-shrink: 0;
+  padding: 0.25rem 0.75rem;
+  background-color: var(--color-alabaster);
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-graphite);
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    flex-direction: column;
+  }
+
+  .page-header a {
+    width: 100%;
+  }
+
+  .page-header a button {
+    width: 100%;
+  }
+
+  .empresas-grid {
+    grid-template-columns: 1fr;
+  }
+}

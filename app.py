@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from config import DevelopmentConfig
 from database import db
 from models import Empresa, Duplicata, StatusDuplicata
@@ -8,6 +9,7 @@ def create_app(config_class=DevelopmentConfig):
     """Cria e configura o app Flask"""
     app = Flask(__name__)
     app.config.from_object(config_class)
+    CORS(app)
 
     db.init_app(app)
 
